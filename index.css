@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+.title {
+    background-color: #f1f8f6;
+    font-family: "Montserrat";
+}
+.container {
+    padding: 3% 20%;
+}
+.nav-item{
+    font-family: "Montserrat";
+    padding: 0 1.125em;
+}
+.navbar-brand {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem !important;
+    color: chocolate !important;
+}
+.navbar-brand:hover {
+    color: green !important;
+}
+.navbar-nav {
+    padding-right: 5%;
+}
+
+.nav-item a {
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height:2px;
+    background: #fd4766;
+    transition: .5s;
+    bottom: 0;
+}
+.nav-link:hover{
+    transition: 0.5s ease-in-out;
+    background-color: rgb(12, 82, 12);
+    color: white !important;
+}
+.row {
+    padding-top: 7%;
+    padding-left: 2%;
+}
+.header-note p{
+    font-family: "Montserrat" sans-serif;
+}
+.myProfession {
+    color: #4958b0;
+    text-transform: capitalize;
+}
+.fad {
+    margin-left: 5%;
+    margin-top: 4%;
+}
+h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 3rem !important;
+    text-shadow: brown;
+}
+h2{
+    color: #4958b0;
+}
+h4{
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+p {
+    line-height: 1.6;
+    filter: opacity(0.8);
+    font-size: 0.813rem;
+}
+.header-image {
+    left: 40px;
+    object-fit: cover;
+}
+.header-img {
+    margin-left: 60%;
+}
+
+.skills {
+    margin: 0;
+    background-color: white;
+    padding: 5% 5%;
+    text-align: center;
+}
+.skill-item {
+    padding: 1% 10%;
+    background-color: #f9fcfb;
+}
+.fa-icon {
+    margin-bottom: 10%;
+    color: #8ab6d6;
+}
+.fa-icon:hover {
+    color: #4958b0;
+}
+.reviews {
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 5% 5%;
+    font-weight: 500;
+}
+/* .reviews-container {
+    padding: 0 15%;
+} */
+.reviews-text {
+    margin-top: 4%;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+.reviews-image {
+    border-radius: 100px;
+    margin-top: 8%;
+}
+.about {
+    text-align: center;
+    padding: 5% 5%;
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+.about-text{
+    background-color: #f1f8f6;
+    text-align: center;
+    padding-top: 7%;
+    width: 40%;
+}
+.contacts{
+    text-align: center;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
