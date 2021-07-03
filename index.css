@@ -32,7 +32,7 @@ html {
     content: "";
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 80%;
     height:2px;
     background: #fd4766;
     transition: .5s;
@@ -63,6 +63,7 @@ h1 {
     font-weight: 600;
     font-size: 3rem !important;
     text-shadow: brown;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }
 h2{
     color: #4958b0;
@@ -137,4 +138,114 @@ p {
 .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+.contact_subtitle {
+    color: #222831 !important;
+    padding: 5% 0 3%;
+}
+input {
+    width: 65%;
+    margin: 7% 0 0 2%;
+    border: none;
+    border-bottom: 1px solid rgb(43, 27, 27);
+}
+input:nth-child(1) {
+    margin-bottom: 10px;
+}
+textarea{
+    margin: 7% 0 5% 20% !important;
+    border: 1px solid rgb(43, 27, 27);
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #007bff;
+}
+textarea:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+.btn {
+    padding: 7% 5%;
+    margin-left: 40%;
+}
+
+@media only screen and (max-width:960px) {
+    .header-note{
+        width: 35%;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .myProfession{
+        margin-top: 8%;
+    }
+    .header-image{
+        width: 18.8rem;
+        height: 23.23rem;
+        position: relative;
+        left: 2.8rem;
+        object-fit: scale-down;
+    }
+    .fa-js {
+        margin-bottom: 1.875rem;
+    }
+}
+@media only screen and (max-width:768px) {
+    .myProfession {
+        margin-top: 0;
+        width: unset;
+    }
+    .header-note{
+        text-align: center;
+    }
+    .header-image{
+        margin: auto;
+    }
+}
+.footer {
+    text-align: center;
+    background-color: #f9fcfb;
+    font-weight: 500;
+    padding: 2% 5%;
+    margin-top: 5%;
+}
+.fab {
+    margin: 0 2% 3%;
+}
+.fab:hover{
+    transform: translateX(-4px);
+}
+.copyright{
+    margin-top: 10%;
+}
+.footer-container {
+    max-width: 64rem;
+    display: flex;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-column-gap: 2rem; */
+    width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer_title {
+    font-size: 0.938rem;
+    margin-right: 1rem;
+}
+.footer_link {
+    padding: .25rem 0;
+}
+.footer_link:hover {
+    color: #5361ff;
+}
+.footer_social {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+.footer_social:hover {
+    color: #5361ff;
+}
+li a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
 }
