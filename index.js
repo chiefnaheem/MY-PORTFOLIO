@@ -1,38 +1,40 @@
-var txt = document.querySelector(".myProfession");
+let txt = document.querySelector(".myProfession");
 
-var texts = ["A Software Developer", "A Web Developer", "A Programmer"];
-var i = 0;
-var timer;
-function typingEffect(){
-    var text = texts[i].split("");
-    var loopTyping = function (){
-        if (text.length > 0) {
-            txt.innerHTML += text.shift()
-        }else {
-            deletingEffect();
-            return false;
-        };
-        timer = setTimeout(loopTyping, 500);
-    }
-    loopTyping()
-}
-function deletingEffect(){
-    var text = texts[i].split("");
-    var loopDeleting = function(){
-        if (text.length > 0) {
-            text.pop();
-            txt.innerHTML = text.join("");
-        }else {
-            if (text.length > (i + 1)) {
-                i++
-            } else{
-                i = 0;
+let texts = "A Software Developer,A Web Developer,& A Pharmacist";
+let movingText = texts.split(",")
+let timer;
+
+function typingEffect(n){
+    n = n>=movingText.length?0:n
+
+        let text = movingText[n].split("");
+        let loopTyping = function (){
+            if (text.length > 0) {
+                txt.innerHTML += text.shift()
+            }else {
+                deletingEffect(n);
+                return false;
             };
-            typingEffect();
-            return false;
-        };
-        timer = setTimeout(loopDeleting, 200);
+            timer = setTimeout(loopTyping, 200); 
+        }
+    loopTyping()
+ } 
+   
+
+function deletingEffect(j){
+        let textDelete = movingText[j].split("");
+        let loopDeleting = function(){
+            if (textDelete.length > 0) {
+                textDelete.pop();
+                txt.innerHTML = textDelete.join("");
+            }else {
+                clearTimeout(timer)
+                typingEffect(j+1);
+                return false
+            };
+            timer = setTimeout(loopDeleting, 400);
+        }
+        loopDeleting();
     }
-    loopDeleting();
-}
-typingEffect();
+
+typingEffect(0);

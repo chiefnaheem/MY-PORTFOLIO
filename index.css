@@ -43,17 +43,22 @@ html {
     background-color: rgb(12, 82, 12);
     color: white !important;
 }
-.row {
+/* .row {
     padding-top: 7%;
     padding-left: 2%;
-}
+} */
 .header-note p{
     font-family: "Montserrat" sans-serif;
 }
 .myProfession {
     color: #4958b0;
     text-transform: capitalize;
+    height: 5rem;
+    text-align: center;
 }
+/* .myName {
+    height: 5rem;
+} */
 .fad {
     margin-left: 5%;
     margin-top: 4%;
@@ -78,26 +83,31 @@ p {
     font-size: 0.813rem;
 }
 .header-image {
-    left: 40px;
+    top: 9rem;
+    position: absolute;
+    right: 9rem;
     object-fit: cover;
+    border-radius: 50%;
 }
-.header-img {
+/* .header-img {
     margin-left: 60%;
-}
+} */
 
 .skills {
     margin: 0;
     background-color: white;
-    padding: 5% 5%;
     text-align: center;
 }
-.skill-item {
-    padding: 1% 10%;
-    background-color: #f9fcfb;
+.skills-topic {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: rgb(9, 95, 9);
 }
 .fa-icon {
-    margin-bottom: 10%;
+    /* margin-bottom: 3%; */
     color: #8ab6d6;
+    margin-right: 12rem;
+    
 }
 .fa-icon:hover {
     color: #4958b0;
