@@ -38,3 +38,4 @@ function deletingEffect(j){
     }
 
 typingEffect(0);
+
