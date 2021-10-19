@@ -222,9 +222,10 @@ form > i {
     }
     .header-image{
         margin: auto;
+        display: none;
     }
 }
-@media screen and (min-width:480px) {
+@media screen and (max-width:480px) {
     .header-image{
         display: none;
     }
